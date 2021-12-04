@@ -7,31 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
     <link rel="icon" href="./assets/icon.png" type="image/png">
-    <title>Churrascometro</title>    
-    
+    <title>Churrascometro</title>
+
 </head>
 
 <body>
+
     <div id="sitecontainer">
 
-        <div class="container">
-            <h2>Churrascômetro</h2>
+        <div id="esconder" class="container">
+            <!-- <h2>Churrascômetro</h2> -->
+            <img src="./assets/Logo.png" id = "logo">
             <p>Número de pessoas</p>
-            <input id="adultos" name="adultos" type="number" placeholder="Adultos" >
+            <input id="adultos" name="adultos" type="number" placeholder="Adultos">
             <input id="criancas" name="criancas" type="number" placeholder="Crianças">
             <p>Duração do evento</p>
             <input id="duracao" name="duracao" type="number" placeholder="Duração(h)">
-            <button onclick="calcular()"> Calcular </button>
-            <button onclick="resetar()" id = "reset" class="b2"> Limpar </button>
+            
         </div>
+        <div id= "botoes_click" class="container2">
+            <button id="clicar" onclick="calcular()"> Calcular </button>
+            <button onclick="resetar()" id="reset" class="b2"> Limpar </button></div>
         <div id="resultado">
 
+
+
+
         </div>
-
     </div>
-
-
-
 
     <script src="./javascript/script.js"></script>
 </body>
